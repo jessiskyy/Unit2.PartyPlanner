@@ -7,41 +7,36 @@
     <link rel="stylesheet" href="party.css">
     <script defer src="party.js"></script>
 </head>
-<body>  
-    <form id="addParty">
-        <label>
-            <h1 style="text-align: center;">Event Organizer</h1>
-            <table style="width: 100%;">
-                <tr>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Location</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Jennifer Lopez</td>
-                    <td>4/21/2024</td>
-                    <td>2:00pm</td>
-                    <td>The One Event Hall</td>
-                    <td>Listening Party</td>
-                </tr>
-                <tr>
-                    <td>Taylor Swift</td>
-                    <td>4/30/2024</td>
-                    <td>11:00am</td>
-                    <td>Grand Venue</td>
-                    <td>Wedding</td>
-                </tr>
-                <tr>
-                    <td>Dwayne Johnson</td>
-                    <td>5/15/2024</td>
-                    <td>6:00pm</td>
-                    <td>MG Studio</td>
-                    <td>Film Festival</td>
-                </tr>
-          
-        </label>
+<body> 
+
+    <h1 style="text-align: center;">Event Organizer</h1>
+            <form id="addEvent">
+                <p>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="textContent"><br>
+                    <label for="date">Date</label><br>
+                    <input type="datetime-local" id="date" name="textContent"><br>
+                    <label for="location">Location</label><br>
+                    <input type="text" id="location" name="textContent"><br>
+                    <label for="description">Description</label><br>
+                    <input type="text" id="description" name="textContent"><br>
+                    <button id="button" type="submit">Add Events</button>
+                    </label>
+            
+                </p>
+            
+            </form>
+    <main>
+        <table id="eventsTable" style="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Description</th>
+            </tr>
+    </main>
+            
     
 </body>
 </html>
